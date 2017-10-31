@@ -4,7 +4,7 @@ SmartyStreetsAPI.admin:
     _form: '\Drupal\SmartyStreetsAPI\Form\SmartyStreetsAPISettings'
     _title: 'SmartyStreetsAPI Settings'
   requirements:
-    _permission: 'administer SmartyStreetsAPI settings'
+    _permission: 'SmartyStreetsAPI Settings'
 
 SmartyStreetsAPI.test:
   path: '/admin/config/SmartyStreetsAPITest'
@@ -12,4 +12,4 @@ SmartyStreetsAPI.test:
     _controller: '\Drupal\SmartyStreetsAPI\Controller\SmartyStreetsAPITest::SmartyStreetsAPITesting'
     _title: 'SmartyStreetsAPI Testing'
   requirements:
-    _permission: 'administer SmartyStreetsAPI settings'
+    _permission: 'SmartyStreetsAPI Testing'

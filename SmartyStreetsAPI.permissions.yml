@@ -1,0 +1,8 @@
+SmartyStreetsAPI Settings:
+    title: 'Administer SmartyStreetsAPI Settings'
+    description: 'Configure and Apply SmartyStreetsAPI Settings'
+    restrict access: true
+SmartyStreetsAPI Testing:
+    title: 'Perform SmartyStreetsAPI Testing'
+    description: 'Perform the SmartyStreetsAPI Testing'
+    restrict access: true
