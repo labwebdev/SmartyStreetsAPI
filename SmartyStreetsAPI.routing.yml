@@ -13,3 +13,11 @@ SmartyStreetsAPI.test:
     _title: 'SmartyStreetsAPI Testing'
   requirements:
     _permission: 'SmartyStreetsAPI Testing'
+
+SmartyStreetsAPI.testform:
+  path: '/admin/config/SmartyStreetsAPIForm'
+  defaults:
+    _form: '\Drupal\SmartyStreetsAPI\Form\SmartyStreetsAPITestForm'
+    _title: 'SmartyStreetsAPI Test Form'
+  requirements:
+    _permission: 'SmartyStreetsAPI Settings'
