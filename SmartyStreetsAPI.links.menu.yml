@@ -1,0 +1,11 @@
+SmartyStreetsAPI.admin:
+  title: 'SmartyStreetsAPI Settings'
+  description: 'Configure SmartyStreetAPI Settings'
+  route_name: SmartyStreetsAPI.admin
+  parent: system.admin_config_development
+
+SmartyStreetsAPI.test:
+  title: 'SmartyStreetsAPI Testing'
+  description: 'Test SmartyStreetAPI'
+  route_name: SmartyStreetsAPI.test
+  parent: system.admin_config_development

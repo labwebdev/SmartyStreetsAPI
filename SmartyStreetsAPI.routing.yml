@@ -1,0 +1,15 @@
+SmartyStreetsAPI.admin:
+  path: '/admin/config/SmartyStreetsAPI'
+  defaults:
+    _form: '\Drupal\SmartyStreetsAPI\Form\SmartyStreetsAPISettings'
+    _title: 'SmartyStreetsAPI Settings'
+  requirements:
+    _permission: 'administer SmartyStreetsAPI settings'
+
+SmartyStreetsAPI.test:
+  path: '/admin/config/SmartyStreetsAPITest'
+  defaults:
+    _controller: '\Drupal\SmartyStreetsAPI\Controller\SmartyStreetsAPITest::SmartyStreetsAPITesting'
+    _title: 'SmartyStreetsAPI Testing'
+  requirements:
+    _permission: 'administer SmartyStreetsAPI settings'
