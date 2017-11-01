@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Contains \Drupal\smartystrees\Controller\SmartyStreetsAPITest.
+ * Contains \Drupal\SmartyStreetsAPI\Controller\SmartyStreetsAPIValidate.
  */
 namespace Drupal\SmartyStreetsAPI\Controller;
 $output = "";
@@ -16,8 +16,8 @@ use SmartyStreets\PhpSdk\US_Street\Lookup;
 use Drupal\Core\Controller\ControllerBase;
 
 
-class SmartyStreetsAPITest extends ControllerBase {
-  public function SmartyStreetsAPITesting() {
+class SmartyStreetsAPIValidate extends ControllerBase {
+  public function LookupAddress() {
       $smartyauthid = \Drupal::config('SmartyStreetsAPI.settings')->get('SmartyStreetsAPI_secret_key_auth_id');
       $smartyauthtoken = \Drupal::config('SmartyStreetsAPI.settings')->get('SmartyStreetsAPI_secret_auth_token');
       $staticCredentials = new StaticCredentials($smartyauthid, $smartyauthtoken);
@@ -26,9 +26,9 @@ class SmartyStreetsAPITest extends ControllerBase {
                       ->buildUsStreetApiClient();
 
       $lookup = new Lookup();
-      $lookup->setStreet("7546 S Rosemary Cir");
-      $lookup->setCity("Centennial");
-      $lookup->setState("CO");
+      $lookup->setStreet($_SESSION['street_address']);
+      $lookup->setCity($_SESSION['city']);
+      $lookup->setState($_SESSION['state']);
 
       try {
           $client->sendLookup($lookup);

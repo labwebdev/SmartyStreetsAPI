@@ -14,6 +14,14 @@ SmartyStreetsAPI.test:
   requirements:
     _permission: 'SmartyStreetsAPI Testing'
 
+SmartyStreetsAPI.validate:
+  path: '/admin/config/SmartyStreetsAPIVAlidate'
+  defaults:
+    _controller: '\Drupal\SmartyStreetsAPI\Controller\SmartyStreetsAPIValidate::LookupAddress'
+    _title: 'SmartyStreetsAPI Lookup Address'
+  requirements:
+    _permission: 'SmartyStreetsAPI Testing'
+
 SmartyStreetsAPI.testform:
   path: '/admin/config/SmartyStreetsAPIForm'
   defaults:

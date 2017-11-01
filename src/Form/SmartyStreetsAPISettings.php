@@ -1,7 +1,7 @@
 <?php
  /**
  *@file
- *Contains Drupal\SmartyStreetsAPI\Form\SmartyStreetsAPISettings.
+ *Contains Drupal\SmartyStreetsAPI\Form\smartstreetsSettings.
  */
   namespace Drupal\SmartyStreetsAPI\Form;
   use Drupal\Core\Form\ConfigFormBase;

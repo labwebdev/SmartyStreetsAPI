@@ -32,7 +32,6 @@
    * {@inheritdoc}
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
-    //$config = $this->config('SmartyStreetsAPI.settings');
     $form['SmartyStreetsAPI_street_address'] = array(
         '#type' => 'textfield',
         '#title' => t('Street Addres'),
@@ -55,7 +54,6 @@
       '#button_type' => 'primary',
     );
     return $form;
-    //return parent::buildForm($form, $form_state);
   }
 
   /**
@@ -69,14 +67,12 @@
    * {@inheritdoc}
    */
   public function submitForm(array &$form, FormStateInterface $form_state) {
-    drupal_set_message($this->t('Your street address is @street', array('@street' => $form_state->getValue('SmartyStreetsAPI_street_address'))));
-
-    //$this->config('SmartyStreetsAPI.settings')
-    //  ->set('SmartyStreetsAPI_secret_key_auth_id', $form_state->getValue('SmartyStreetsAPI_secret_key_auth_id'))
-    //  ->set('SmartyStreetsAPI_secret_auth_token', $form_state->getValue('SmartyStreetsAPI_secret_auth_token'))
-    //  ->set('SmartyStreetsAPI_log_api_calls', $form_state->getValue('SmartyStreetsAPI_log_api_calls'))
-    //  ->set('SmartyStreetsAPI_log_api_responses', $form_state->getValue('SmartyStreetsAPI_log_api_responses'))
-    //  ->save();
+    //drupal_set_message($this->t('Your street address is @street', array('@street' => $form_state->getValue('SmartyStreetsAPI_street_address'))));
+    $_SESSION['street_address'] = $form_state->getValue('SmartyStreetsAPI_street_address');
+    $_SESSION['city'] = $form_state->getValue('SmartyStreetsAPI_city');
+    $_SESSION['state'] = $form_state->getValue('SmartyStreetsAPI_state');
+    $form_state->setRedirect('SmartyStreetsAPI.validate');
+    return;
   }
 
 }
