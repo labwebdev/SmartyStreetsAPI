@@ -1,0 +1,3 @@
+services:
+  smartystreetsapi.service:
+    class: Drupal\SmartyStreetsAPI\Controller\SmartyStreetsAPIService

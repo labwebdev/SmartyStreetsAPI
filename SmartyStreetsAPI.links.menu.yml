@@ -1,17 +1,5 @@
 SmartyStreetsAPI.admin:
   title: 'SmartyStreetsAPI Settings'
-  description: 'Configure SmartyStreetAPI Settings'
+  description: 'Configure SmartyStreetsAPI Settings'
   route_name: SmartyStreetsAPI.admin
-  parent: system.admin_config_development
-
-SmartyStreetsAPI.test:
-  title: 'SmartyStreetsAPI Testing'
-  description: 'Test SmartyStreetAPI'
-  route_name: SmartyStreetsAPI.test
-  parent: system.admin_config_development
-
-SmartyStreetsAPI.testform:
-  title: 'SmartyStreetsAPI Testing Form'
-  description: 'Test SmartyStreetAPI Form'
-  route_name: SmartyStreetsAPI.testform
   parent: system.admin_config_development

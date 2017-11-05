@@ -5,27 +5,4 @@ SmartyStreetsAPI.admin:
     _title: 'SmartyStreetsAPI Settings'
   requirements:
     _permission: 'SmartyStreetsAPI Settings'
-
-SmartyStreetsAPI.test:
-  path: '/admin/config/SmartyStreetsAPITest'
-  defaults:
-    _controller: '\Drupal\SmartyStreetsAPI\Controller\SmartyStreetsAPITest::SmartyStreetsAPITesting'
-    _title: 'SmartyStreetsAPI Testing'
-  requirements:
-    _permission: 'SmartyStreetsAPI Testing'
-
-SmartyStreetsAPI.validate:
-  path: '/admin/config/SmartyStreetsAPIVAlidate'
-  defaults:
-    _controller: '\Drupal\SmartyStreetsAPI\Controller\SmartyStreetsAPIValidate::LookupAddress'
-    _title: 'SmartyStreetsAPI Lookup Address'
-  requirements:
-    _permission: 'SmartyStreetsAPI Testing'
-
-SmartyStreetsAPI.testform:
-  path: '/admin/config/SmartyStreetsAPIForm'
-  defaults:
-    _form: '\Drupal\SmartyStreetsAPI\Form\SmartyStreetsAPITestForm'
-    _title: 'SmartyStreetsAPI Test Form'
-  requirements:
-    _permission: 'SmartyStreetsAPI Settings'
+    

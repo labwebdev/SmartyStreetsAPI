@@ -1,5 +1,5 @@
 name: SmartyStreetsAPI
-description: SmartyStreetsAPI.com API Integration
+description: SmartyStreets.com API Integration
 package: Custom
 type: module
 core: 8.x
